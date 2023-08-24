@@ -1,0 +1,13 @@
+query ($id: ID!){
+  category(id: $id) {
+    id
+    name
+    tasks {
+      id
+      title
+      description
+      due_date
+      status
+    }
+  }
+}

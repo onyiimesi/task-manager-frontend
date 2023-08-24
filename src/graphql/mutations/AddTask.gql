@@ -1,0 +1,22 @@
+mutation (
+    $title: String!
+    $description: String
+    $due_date: String
+    $status: String
+    $category_id: String!
+) {
+  createTask (
+    title: $title, 
+    description: $description, 
+    due_date: $due_date, 
+    status: $status, 
+    category_id: $category_id
+    ){
+    id
+    title
+    description
+    due_date
+    status
+  }
+  
+}

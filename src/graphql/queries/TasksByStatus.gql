@@ -1,0 +1,9 @@
+query ($status: String) {
+  tasksByStatus(status: $status) {
+    id
+    title
+    description
+    due_date
+    status
+  }
+}
